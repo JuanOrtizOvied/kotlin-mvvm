@@ -37,7 +37,8 @@ fun ChallengeCard(modifier: Modifier = Modifier, challenge: Challenge) {
                 contentScale = ContentScale.FillBounds,
             )
             Spacer(modifier = Modifier.height(5.dp))
-            Text(text = challenge.title, style = MaterialTheme.typography.titleMedium)
+            Text(text = challenge.title, style = MaterialTheme.typography.titleLarge)
+            Text(text = challenge.description, style = MaterialTheme.typography.titleMedium)
         }
     }
 }

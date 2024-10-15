@@ -14,6 +14,7 @@ class ChallengesRepositoryImpl @Inject constructor(
     override suspend fun getChallenges(): Either<NetworkError, List<Challenge>> {
         return Either.catch {
             val response = challengesApi.getChallenges() // Get ApiResponse
+            print("Response --> $response")
             if (response.detail == "ok"){
                 response.result // Return result if successful
             } else {

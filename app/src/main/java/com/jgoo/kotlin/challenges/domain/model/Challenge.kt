@@ -8,10 +8,11 @@ data class Challenge(
     val description: String,
     // val end_date: Instant, // Use Instant for date-time
     val image_url: String,
-    val sponsor: Sponsor
+    val reward: Reward
 )
 
-data class Sponsor(
+data class Reward(
     val uuid: String,
-    val logo_image_url: String
+    val name: String,
+    val image_url: String
 )
